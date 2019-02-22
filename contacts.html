@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>My Contacts.</title>
+</head>
+
+<body>
+  <h3>My Contact Details</h3>
+  <ul>
+    <li>Phone Number</li>
+    <ul>
+      <li>07030496961</li>
+    </ul>
+    <li>Email Address</li>
+    <ul>
+      <li>adebakintaibat1@gmail.com</li>
+      <li>adebakintaibat@yahoo.com</li>
+    </ul>
+    <li>Postal Address</li>
+    <ul>
+      <li>12 Elephant Cement House</li>
+    </ul>
+  </ul>
+  <hr>
+  <br>
+  <h3>Your Contact Details</h3>
+  <p>Please fill out form to proceed.</p>
+  <!--You remove the class beside form so that the action will be sent to your email addy specified.
+  the enctype means encodede type which shouldbe labelled text/plain to eradicate unknown symbols
+  plus we are using the utf-8 encoded character set-->
+
+  <form action="mailto:adebakintaibat1@gmail.com" method="post" enctype="text/plain">
+    <label for="Your Name">Your Name:
+      <input type="text" name="yourName" value="">
+      <label>Submit</label>
+      <input type="submit" name="" value="">
+      <input type="color" name="" value="">
+      <br>
+      <label>Upload your CV</label>
+      <input type="file" name="" value="">
+      <label>D.O.B</label>
+      <input type="date" name="" value="">
+      <br>
+      <label>M.Sc</label>
+      <input type="checkbox" name="Degree" value="">
+      <label>B.Sc</label>
+      <input type="checkbox" name="Degree" value="">
+      <label>P.hD</label>
+      <input type="checkbox" name="Degree" value="">
+      <br>
+      <label>Male</label>
+      <input type="radio" name="Gender" value="">
+      <label>Female</label>
+      <input type="radio" name="Gender" value="">
+      <br>
+      <label>Email:</label>
+      <!--yourName asigned to name attr will also appear in your specified email.-->
+      <input type="email" name="yourEmail" value="">
+      <br>
+      <label>Your Message:</label><br>
+      <!--yourName after name will appear in your email specified on form action to know
+      exactly what the user input-->
+      <textarea name="yourMessage" rows="10" cols="30"></textarea>
+      <input type="submit" name="">
+    </label>
+
+  </form>
+</body>
+
+</html>
